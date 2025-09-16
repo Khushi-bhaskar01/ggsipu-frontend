@@ -1,0 +1,93 @@
+.placement-page {
+  padding: 30px 50px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.placement-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: var(--text-header);
+}
+
+.officials {
+  margin-bottom: 40px;
+  width: 50vw;
+
+}
+
+.officials h2 {
+    text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--text-header);
+}
+
+.officials-info {
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 15px 20px;
+  line-height: 1.6;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.officials-info a {
+  color: var(--button-border);
+  text-decoration: none;
+}
+
+.officials-info a:hover {
+  text-decoration: underline;
+}
+
+.placement-stats h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--text-header);
+  text-align: center;
+}
+
+.placement-stats table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  width: 70vw;
+}
+
+.placement-stats th,
+.placement-stats td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.placement-stats thead {
+  background: var(--navbar-bg);
+}
+
+.placement-stats tbody tr:nth-child(odd) {
+  background: rgba(0,0,0,0.03);
+}
+
+.placement-stats tbody tr:hover {
+  background: var(--card-hover);
+}
+
+.file-link {
+  color: var(--button-border);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.file-link:hover {
+  text-decoration: underline;
+}

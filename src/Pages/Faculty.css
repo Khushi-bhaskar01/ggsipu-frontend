@@ -1,0 +1,97 @@
+.faculty-page {
+  padding: 20px 40px;
+  background: var(--bg-color);
+  min-height: 100vh;
+  color: var(--text-color);
+}
+
+.faculty-title {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 25px;
+  color: var(--text-header);
+}
+
+.faculty-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px;
+}
+
+
+@media (max-width: 1024px) {
+  .faculty-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 600px) {
+  .faculty-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.faculty-card {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, background 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.faculty-card:hover {
+  transform: translateY(-3px);
+  background: var(--card-hover);
+}
+
+.faculty-card h2 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  color: var(--text-header);
+}
+
+.designation {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+
+.email-link {
+  color: var(--button-border);
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.links {
+  margin-top: auto;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.links a {
+  flex: 1;
+  text-align: center;
+  padding: 5px 8px;
+  font-size: 0.75rem;
+  border-radius: 6px;
+  text-decoration: none;
+  background: var(--profile-button);
+  color: white;
+  transition: background 0.2s ease;
+}
+
+.links a:hover {
+  background: #008bb5;
+}

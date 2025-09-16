@@ -1,0 +1,69 @@
+.orbit-scene {
+  position: relative;
+  margin: 2rem auto;
+  user-select: none;
+  overflow: visible;
+}
+
+.orbit-ring {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.orbit-item {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-style: preserve-3d;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.orbit-item img {
+  display: block;
+  width: 180px;              
+  height: 130px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.45);
+  border: 3px solid rgba(255,255,255,0.55);
+  background: #111;         
+}
+.about-container {
+  display: grid;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about-card {
+  background: var(--about-bg);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.about-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.about-title {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: var(--about-blue);
+  border-left: 4px solid var(--about-blue);
+  padding-left: 10px;
+}
+
+.about-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-color);
+}
