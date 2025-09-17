@@ -9,6 +9,7 @@ import Faculty from './Pages/Faculty';
 import Staff from './Pages/Staff';
 import Placement from './Pages/Placements';
 import Contact from './Pages/Contact';
+import ViceChancellor from './Pages/Vice';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="staff" element={<Staff />} />
         <Route path="placement" element={<Placement />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="vice" element={<ViceChancellor />} />
       </Routes>
       <Footer/>
     </>

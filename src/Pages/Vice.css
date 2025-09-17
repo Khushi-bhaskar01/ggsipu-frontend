@@ -1,0 +1,172 @@
+/* Vice.css */
+
+.vc-page {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+  padding: 2rem;
+  background: var(--bg-color);
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.vc-hero {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 20px;
+  background: var(--card-bg);
+  box-shadow: 0 10px 30px var(--box-shadow);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.vc-hero:hover {
+  transform: translateY(-5px);
+  background: var(--card-hover);
+}
+
+.vc-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid var(--pill-bg);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.vc-info h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 0.5rem;
+}
+
+.vc-info h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--subheading-color);
+  margin-bottom: 0.3rem;
+}
+
+.vc-info h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--muted-color);
+  margin-bottom: 1rem;
+}
+
+.vc-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.vc-highlights li {
+  background: var(--pill-bg);
+  color: var(--pill-text);
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.vc-qualifications {
+  font-size: 0.9rem;
+  color: var(--muted-color);
+  font-style: italic;
+}
+
+/* Tabs */
+.vc-tabs {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 1.5rem;
+  gap: 1rem;
+}
+
+.vc-tabs button {
+  padding: 0.7rem 1.6rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--tab-bg);
+  color: var(--subheading-color);
+  transition: all 0.3s ease;
+}
+
+.vc-tabs button:hover {
+  background: var(--tab-hover);
+}
+
+.vc-tabs .active {
+  background: var(--tab-active-bg);
+  color: var(--tab-active-text);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Content */
+.vc-content {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 24px var(--box-shadow);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.vc-content h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 1rem;
+}
+
+.vc-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.vc-list li {
+  font-size: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--tab-bg);
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.vc-list li:hover {
+  color: var(--about-blue);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .vc-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .vc-img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .vc-highlights {
+    justify-content: center;
+  }
+}

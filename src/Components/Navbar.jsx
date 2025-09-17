@@ -33,11 +33,11 @@ const bg = theme === 'light' ? bglight : bgdark;
             <Link to="/dean" className="navbar_pages dean">Dean</Link>
             <Link to="/faculty" className="navbar_pages">Faculty</Link>
             <Link to="/staff" className="navbar_pages">Staff</Link>
-            <Link to="/academics" className="navbar_pages">Academics</Link>
-            <Link to="/examination" className="navbar_pages">Examination</Link>
-            <Link to="/notices" className="navbar_pages">Notices</Link>
+            <a href='https://ggsipu-academics.vercel.app/' target='_blank' className="navbar_pages">Academics</a>
+            <a href='http://ipu.ac.in/exam_datesheet.php#' target='_blank' className="navbar_pages">Examination</a>
+            <a href="http://ipu.ac.in/notices_usict.php" target='_blank' className="navbar_pages">Notices</a>
             <Link to="/placement" className="navbar_pages">Placement</Link>
-            <Link to="/alumni" className="navbar_pages">Alumni</Link>
+            <a href='http://ipu.ac.in/alumni_usict.php' target='_blank' className="navbar_pages">Alumni</a>
             <Link to="/vice" className="navbar_pages">Vice Chancellor</Link>
             <Link to="/contact" className="navbar_pages">Contact Us</Link>
         </div>

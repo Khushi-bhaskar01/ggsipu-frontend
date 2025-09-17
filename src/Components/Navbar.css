@@ -21,9 +21,31 @@ body.light {
   --card-bg: #ffffff;
   --card-hover: #f0f0f0;
   --profile-button:#0055aa ;
-  
-}
+  --box-shadow: rgba(0,0,0,0.08);
+   --heading-color: #1e293b;
+  --subheading-color: #475569;
+  --muted-color: #64748b;
+  --pill-bg: #eef2ff;
+  --pill-text: #3730a3;
+  --tab-bg: #e2e8f0;
+  --tab-hover: #cbd5e1;
+  --tab-active-bg: linear-gradient(135deg, #6366f1, #4338ca);
+  --tab-active-text: #ffffff;
+  /* track */
+  --scroll-track: #f1f5f9;
 
+  /* gradient thumb colors (light) */
+  --scroll-thumb-start: #3b82f6;
+  --scroll-thumb-end:   #1e3a8a;
+
+  /* hover gradient (light) */
+  --scroll-thumb-hover-start: #2563eb;
+  --scroll-thumb-hover-end:   #1e40af;
+
+  /* fallback solid color for browsers that don't support gradient (Firefox) */
+  --scroll-thumb-fallback: #27d1e7;
+
+}
 /* DARK THEME */
 body.dark {
   --bg-color: #2b2b2b;
@@ -38,7 +60,28 @@ body.dark {
    --card-bg: rgb(48, 48, 48);
   --card-hover: rgb(68, 68, 68);
   --profile-button:#00a4d6;
+  --box-shadow: rgba(255,255,255,0.2);
+  --heading-color: var(--text-header);
+  --subheading-color: #b0b0b0;
+  --muted-color: #c0c0c0;
+  --pill-bg: #333;
+  --pill-text: var(--about-blue);
+  --tab-bg: #444;
+  --tab-hover: #555;
+  --tab-active-bg: linear-gradient(135deg, #24c3f3, #0088b0);
+  --tab-active-text: #ffffff;
+  --scroll-track: #1e1e1e;
+
+  --scroll-thumb-start: #1e3a8a;
+  --scroll-thumb-end:   #0f172a;
+
+  --scroll-thumb-hover-start: #2563eb;
+  --scroll-thumb-hover-end:   #1e3a8a;
+
+  --scroll-thumb-fallback: #1e3a8a;
 }
+
+
 .navbar{
     display: flex;
     flex-direction: row;

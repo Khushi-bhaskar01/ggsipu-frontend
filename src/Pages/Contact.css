@@ -32,7 +32,7 @@
   background: var(--about-bg);
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px var(--box-shadow);
   transition: transform 0.2s ease-in-out;
   color: var(--text-color);
   cursor: pointer;
